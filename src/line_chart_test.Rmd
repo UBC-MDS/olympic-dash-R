@@ -1,0 +1,43 @@
+---
+title: "line_chart_test"
+author: "Helin Wang"
+date: "3/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+olympic_data <- na.omit(readr::read_csv("../data/olympics_data.csv"))
+olympic_data
+```
+
+```{r}
+noc_list <- sort(unique(olympic_data$noc))
+
+noc_list
+```
+
+
+```{r}
+olympic_data_line_chart <- olympic_data %>%
+  subset(noc == "CAN")
+
+olympic_data_line_chart
+```
+
+```{r}
+line_chart <- olympic_data_line_chart %>%
+  ggplot(aes(x = year)) +
+  geom_line(stat = 'count') +
+  labs(
+    x = "Year",
+    y = "Count of medals",
+    title = "Medals Earned Over Time"
+  )
+line_chart
+```
+
