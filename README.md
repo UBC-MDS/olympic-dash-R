@@ -64,11 +64,17 @@ You are welcome to contribute to olympic-dash if you have any idea regarding to 
 
 ### How to install and run locally
 
-To run the dashboard locally, we recommend to use a virtual environment like [venv](https://docs.python.org/3/library/venv.html) or [Anaconda](https://www.anaconda.com/). For simplicity, we could demonstrate the installiation process with venv.
-
-#### Setup
-
 Run the following command at the root directory of the project:
+
+1. Copy and paste the following link: git clone https://github.com/UBC-MDS/olympic-dash-R.git to your Terminal.
+
+2. On your terminal, type: cd olympic-dash-R.
+
+3. To run an app instance locally, first install the dependencies by typing: Rscript init.R
+
+4. Launch app.R by typing: Rscript app.R
+
+5. Using any modern web browser, visit http://127.0.0.1:8050/ to access the app.
 
 
 ## Contributors
