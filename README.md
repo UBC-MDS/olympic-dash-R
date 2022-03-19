@@ -26,7 +26,7 @@ We propose building a visualization app to allow IOC members (and members of the
 
 ## Description of The Dashboard
 
-To explore the current dashboard, please click [here](https://olympic-dash-dsci532-group22-p.herokuapp.com/).
+To explore the current dashboard, please click [here](https://olympic-dash-r-22.herokuapp.com/).
 
 This app contains a dashboard which visualizes Olympic data from 1896 up until 2016. 
 Key metrics of interest will be displayed including: 
@@ -35,8 +35,8 @@ Key metrics of interest will be displayed including:
 - Athlete height based on Olympic events 
 - Medals per country will be displayed 
 
-Medals earned per country will be displayed via a bubble chart accompanied by a 
-slider, allowing users to control the year of the Olympics displayed by the graph. 
+Medals earned per country will be displayed via a bubble chart. Countries
+are color coded by the IOC continent region they belong to.
 
 A bar chart will show the medals earned for each athlete age bracket, while a histogram 
 will show the distribution of athlete heights based on the event selected. These figures 
@@ -49,12 +49,14 @@ to display on the graph.
 
 Radio buttons on the side of the dashboard will allow for filtering of 
 summer/winter Olympics data, in addition to allowing for users to filter data 
-by the type of medals. Using these filters, users will be able to investigate trends 
-in Olympic success between countries, medal types, athlete demographics, and more.
+by the type of medals. Additionally a year slider will allow for users to filter 
+data in the bubble chart and both histograms by year. Using these filters, users 
+will be able to investigate trends in Olympic success between countries, medal types, 
+athlete demographics, and more.
 
-## Proposed Sketch
+## Example Usage
 
-![Alt text](img/olympic-dash-proposal.png?raw=true "Dashboard Proposal")
+![Alt text](img/dash-R-usage.gif)
 
 ## Contribute to This Dashboard
 
